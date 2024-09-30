@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.top{
+    background-color: rgba(79, 69, 69, 0.358);
+    margin: 0 auto;
+    overflow: hidden;
+    overflow-x: auto;
+}
+.pane{
+    height:50vh;
+    display: flex;
+}
+.editor-container {
+    flex-basis: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    background-color:rgba(118, 97, 97, 0.363) ;
+}
+.editor-title{
+    padding: 10px 5px;
+    background-color: black;
+    color: #fff;
+    text-shadow: .5px .5px rgb(186, 50, 91);
+    display: flex;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    
+    justify-content: space-between;
+}
+.editor-title > button{
+    border-radius: 10px;
+    background: none;
+    font-weight: bolder;
+    color: #fff;
+    border: none;
+    padding: 0 5px;
+}
+.code-mirror-wrapper{
+    flex-grow: 1;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    overflow-x: auto;
+    
+}
+.CodeMirror{
+    height: 100% !important;
+}
+.collapse{
+    flex-grow: 0;
+}
+.collapse .CodeMirror-scroll{
+    position: absolute;
+}
